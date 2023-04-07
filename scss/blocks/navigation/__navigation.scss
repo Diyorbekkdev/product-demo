@@ -1,0 +1,64 @@
+$primary-bg-color: #fff;
+$secondary-bg-color: #E5E5E5;
+$main-text-color: #22343D;
+$hover-color: #02897A;
+
+
+
+
+header{
+    padding: 26px 0;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    transition: .3s ease-in;
+    // height: 80px;
+    // transition: top 0.9s ease-in-out;
+    background: $secondary-bg-color;
+    z-index: 1;
+    
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            .small_text{
+                display: inline-block;
+                position: relative;
+                color: $main-text-color;
+            }
+            .small_text::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $hover-color;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+
+            .small_text:hover::after{
+                color: black;
+                transform: scaleX(1);
+                transform-origin: bottom left; 
+                transition: .3s ease-in-out;   
+            }
+        }
+    }
+}
+
+.navbar-shrink{
+    transition: .3s ease-out;
+    padding: 12px 0;
+    box-shadow: 0 2px 10px -2px black;
+}

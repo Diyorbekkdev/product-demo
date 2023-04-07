@@ -1,0 +1,63 @@
+@import 'blocks/backtop/_backtop';
+@import 'blocks/humburger/_humburger';
+@import 'blocks/normalize/_normalize';
+@import 'blocks/root/_variables';
+@import 'blocks/navigation/_navigation';
+@import 'blocks/main-styles/first-section/_header';
+@import 'blocks/main-styles/second-section/_product';
+@import 'blocks/main-styles/third-section/_management';
+@import 'blocks/main-styles/fourth-section/_suppot';
+@import 'blocks/main-styles/fifth-section/_collaboration';
+@import 'blocks/main-styles/six-section/_process';
+@import 'blocks/main-styles/seventh-section/_contents';
+@import 'blocks/main-styles/eight-section/_price';
+@import 'blocks/main-styles/nineth-page/_clients';
+@import 'blocks/main-styles/tenth-page/_joining';
+@import 'blocks/footer/_footer';
+@import 'blocks/_darkmode';
+
+
+
+
+
+
+:root
+{
+    --bg-color: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+    --btn-color: #3858D6;
+    --primary--text-color: #1E1D1D;
+    --secondary-text-color: #8B8E99;
+    --card-bg-color: #F6F6F6;
+    --container-width: 1102px;
+
+
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+
+body.dark{
+    --bg-color: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+    --primary--text-color: #1E1D1D;
+    --secondary-text-color: #8B8E99;
+    --card-bg-color: #F6F6F6;
+    --container-width: 1102px;
+
+
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
+body.dark body{
+    background: #121212;
+}
+
+
+// @extend class chaqirish
+// @mixin class berish
+
+

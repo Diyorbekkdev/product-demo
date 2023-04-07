@@ -1,0 +1,39 @@
+.customer{
+    @media (min-width: 250px){
+        .customer_container{
+            margin-top: 150px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 25px;
+
+            .c_img{
+                width: 100%;
+                animation-name: top-bottom;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                transition: all .3s ;
+            }
+            .row{
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    }
+    @media (min-width: 710px){
+        .customer_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            align-items: center;
+        }
+        .c_img{
+            width: 100%;
+        }
+        .customer_info{
+            margin-left: 90px;
+           width: 85%;
+        }
+    }
+}

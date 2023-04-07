@@ -1,0 +1,40 @@
+
+@media (min-width: 250px){
+    .management_container{
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        
+    }
+    .management_info{
+        margin-bottom: 35px;
+     width: 100%;
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    .m_img{
+        animation-name: top-bottom;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transition: all .3s ;
+        width: 100%;
+    }
+}
+
+@media (min-width: 710px){
+    .management_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 84px;
+        align-items: center;
+        .management_info{
+            width: 100%;
+            .h{
+                margin-top: 25px;
+            }
+        }
+    }
+
+}

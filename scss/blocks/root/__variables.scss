@@ -1,0 +1,167 @@
+$primary-bg-color: #fff;
+$secondary-bg-color: #E5E5E5;
+$main-text-color: #22343D;
+$hover-color: #02897A;
+
+// TEXT STYLARI
+
+body.dark{
+  background: rgb(40,40,55);
+  background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+}
+
+.main_title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 60px;
+  color: $main-text-color;
+}
+
+.average_text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: $main-text-color;
+}
+
+.small_text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  color: $main-text-color;
+}
+
+
+.sub_heading{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 48px;
+  // text-align: center;
+  color: #22343D;
+}
+
+
+.card_heading{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 33px;
+  color: #22343D;
+
+}
+
+
+.heading_style{
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #22343D;
+}
+
+
+.nav_btn{
+  padding: 10px 23px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $main-text-color;
+  background: $primary-bg-color;
+  transition: .3s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.nav_btn:hover{
+  background: $hover-color;
+  transition: .3s ease-in-out;
+  color: #fff;
+  border: 1px solid $hover-color;
+}
+
+
+// hover
+.hover{
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.hover::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #049c11;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.hover:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.only{
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: #22343D;
+}
+
+/* CSS styles */
+@keyframes blink {
+  0% {
+    content: "Welcome!";
+  }
+  1%{
+    content: "Welcome!";
+  }
+  50% {
+    content: "Animate me!";
+  }
+  100% {
+    content: "I'm blinking!";
+  }
+}
+
+
+
+.container{
+  max-width: 1112px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 400px){
+  html{
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 768px){
+  html{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 950px){
+  html{
+    font-size: 16px;
+  }
+}
+
+
+
